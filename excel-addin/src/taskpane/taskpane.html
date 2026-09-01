@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contoso Task Pane Add-in</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px;
+        }
+        button {
+            margin: 5px 0;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 3px;
+        }
+        button:disabled {
+            background-color: #c8c8c8;
+            cursor: not-allowed;
+        }
+        #status {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f3f2f1;
+            border: 1px solid #edebe9;
+            border-radius: 3px;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Live Data Feed</h2>
+    <p>Connect to the WebSocket server to stream real-time data into Excel.</p>
+    <button id="connect-btn">Connect</button>
+    <button id="disconnect-btn" disabled>Disconnect</button>
+
+    <div id="status">Disconnected</div>
+</body>
+
+</html>

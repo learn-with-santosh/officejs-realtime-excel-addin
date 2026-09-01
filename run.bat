@@ -1,0 +1,6 @@
+@echo off
+echo Starting WebSocket Server...
+start cmd /k "cd websocket-server && npm run dev"
+
+echo Starting Excel Add-in...
+start cmd /k "cd excel-addin && npm start"

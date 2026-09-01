@@ -4,6 +4,24 @@
   "private": true,
   "scripts": {
     "start": "office-addin-debugging start manifest.xml",
-    "stop": "office-addin-debugging stop manifest.xml"
+    "stop": "office-addin-debugging stop manifest.xml",
+    "dev-server": "webpack serve --mode development"
+  },
+  "dependencies": {
+    "@microsoft/office-js": "^1.1.88"
+  },
+  "devDependencies": {
+    "@types/office-js": "^1.0.380",
+    "copy-webpack-plugin": "^11.0.0",
+    "html-webpack-plugin": "^5.5.1",
+    "office-addin-cli": "latest",
+    "office-addin-debugging": "latest",
+    "office-addin-dev-certs": "latest",
+    "office-addin-manifest": "latest",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4",
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
   }
 }
