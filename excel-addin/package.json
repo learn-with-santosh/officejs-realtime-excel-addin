@@ -1,0 +1,9 @@
+{
+  "name": "excel-addin",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "office-addin-debugging start manifest.xml",
+    "stop": "office-addin-debugging stop manifest.xml"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "officejs-realtime-excel-addin",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "excel-addin",
+    "websocket-server"
+  ]
+}
